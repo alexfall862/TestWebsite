@@ -1,31 +1,8 @@
 {
-  "name": "my-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "start": "vite preview --port $PORT"
-  },
-  "devDependencies": {
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.5.1",
-    "typescript": "~5.8.3",
-    "vite": "^5.2.0",
-    "npm-force-resolutions": "^0.0.10"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "engines": {
-    "node": "18.x"
-  },
-  "resolutions": {
-    "rollup": "3.29.4"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   }
 }
